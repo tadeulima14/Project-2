@@ -37,6 +37,7 @@ function init() {
 }
 
 function showNewSlide(e) {
+    e.preventDefault();
     // shortcut variables
     const container = document.querySelector(".container");
     const frame = document.querySelector(".frame");
@@ -94,7 +95,8 @@ function showNewSlide(e) {
     
 }
 
-function autoPlay() { //redefine ALL used variables in new function
+function autoPlay() {
+     //redefine ALL used variables in new function
     const frame = document.querySelector(".frame")
     const currentSlide = document.querySelector(".current");
     const slides = document.querySelectorAll(".slide");
